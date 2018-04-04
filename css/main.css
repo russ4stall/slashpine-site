@@ -1,0 +1,17 @@
+body {
+  color: white; }
+  body .container-fluid {
+    padding: 0; }
+  body section {
+    padding: 30px; }
+    body section .section-header {
+      text-align: center; }
+    body section.top-section {
+      padding-top: 10px;
+      padding-bottom: 100px;
+      background: linear-gradient(rgba(18, 62, 0, 0.82), rgba(97, 40, 0, 0.82)), url("/img/pinetrees.jpg") no-repeat center/cover fixed; }
+    body section.work {
+      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/woodshave.jpg") no-repeat center/cover fixed; }
+      body section.work .bbbs-lms-welcome-page {
+        height: 310px;
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/bbbs-lms-welcome.png") no-repeat center/cover; }
