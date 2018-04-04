@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/main.scss -o ./css",
-    "watch": "node-sass --watch --recursive sass -o ./css ."
+    "watch": "node-sass --watch --recursive sass -o ./css .",
+    "build": "echo ok"
   },
   "author": "",
   "license": "ISC",
