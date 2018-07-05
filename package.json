@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/main.scss -o ./css",
-    "watch": "node-sass --watch --recursive sass -o ./css .",
+    "sass": "node-sass sass/main.scss -o ./public/css",
+    "watch": "node-sass --watch --recursive sass -o ./public/css .",
     "build": "echo ok"
   },
   "author": "",
