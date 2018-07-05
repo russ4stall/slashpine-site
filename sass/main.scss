@@ -92,13 +92,14 @@ body {
         &.approach {
             background: linear-gradient(rgba(black, 0.65), rgba(black, 0.65)), url('/img/woodshave.jpg') no-repeat center / cover fixed;
             q {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             ul {
                 max-width: 800px;
                 margin: 40px auto;
                 text-align: left;
+                font-size: 22px;
             }
 
             li {

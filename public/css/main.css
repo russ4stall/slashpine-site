@@ -46,11 +46,12 @@ body {
     body section.approach {
       background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/woodshave.jpg") no-repeat center/cover fixed; }
       body section.approach q {
-        font-size: 22px; }
+        font-size: 24px; }
       body section.approach ul {
         max-width: 800px;
         margin: 40px auto;
-        text-align: left; }
+        text-align: left;
+        font-size: 22px; }
       body section.approach li {
         padding-bottom: 10px; }
     body section.footer {
