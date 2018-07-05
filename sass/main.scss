@@ -1,5 +1,25 @@
 $orange: rgb(97, 40, 0);
 $green: rgb(18, 62, 0);
+@mixin breakpoint($point) {
+    @if $point == sm {
+      @media (max-width: 599px) { @content ; }
+    }
+    @else if $point == md {
+      @media (min-width: 600px) { @content ; }
+    }
+    @else if $point == lg {
+      @media (min-width: 900px) { @content ; }
+    }
+    @else if $point == xl {
+      @media (min-width: 1200px) { @content ; }
+    }
+    @else if $point == xxl {
+      @media (min-width: 1800px) { @content ; }
+    }
+    @else if $point == xxxl {
+      @media (min-width: 2200px) { @content ; }
+    }
+  }
 
 body {
     color: white;
@@ -26,6 +46,7 @@ body {
         text-align: center;
         padding-bottom: 100px;
         font-weight: 300;
+        @include breakpoint(sm) { background-attachment: scroll !important; }
 
         .section-header {
             text-align: center;
@@ -37,6 +58,7 @@ body {
             padding-top: 10px;
             //background: linear-gradient(rgba($green, 0.82), rgba($orange, 0.82)), url('/img/pinetrees.jpg') no-repeat center / cover fixed;
             background: linear-gradient(rgba(black, 0.65), rgba(black, 0.65)), url('/img/pinetrees.jpg') no-repeat center / cover fixed;
+            
         }
         
         &.work {

@@ -16,6 +16,9 @@ body {
     text-align: center;
     padding-bottom: 100px;
     font-weight: 300; }
+    @media (max-width: 599px) {
+      body section {
+        background-attachment: scroll !important; } }
     body section .section-header {
       text-align: center;
       text-transform: uppercase;
