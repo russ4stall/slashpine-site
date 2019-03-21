@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>program_standards_7_23</title>
+
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+/* CUSTOM */
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol ol {
+    list-style-type: lower-roman;
+}
+
+table {
+  width: 100%;
+}
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">PROGRAM STANDARDS 7-23</h1>
+
+<h3 id="toc_1">Preamble</h3>
+
+<p>For purposes of these Program Standards 7-23, a match is defined as a One-to-One mentoring relationship between a youth and an older mentor, through which the matched parties spend consistent, significant time together, and which is monitored and supported by Professional Program Affiliate Staff (as defined in Standard 6B-03).</p>
+
+<p>A match may be carried out in different settings, which include:</p>
+
+<ul>
+<li>Community-Based (“CB”), where matches meet in the community;</li>
+<li>Site-Based (“SB”), where matches only meet at a designated site (e.g., school, workplace, or other site);</li>
+<li>Site-Based Facilitated (“SBF”), where matches only meet at a designated site (e.g., school, workplace or other site) and a staff member is present at all sessions and observing match interactions; and</li>
+<li>Site-Based Plus (“SB+”), a hybrid where matches meet both in CB and SB settings. Any match that will be permitted to meet outside of a designated site must follow the volunteer and youth/family enrollment, training, matching and match support procedures of a CB match, even if the primary meeting location will be the designated site.</li>
+</ul>
+
+<h3 id="toc_2">Standard 7 - Innovation</h3>
+
+<p>BBBSA values learning and innovation. Innovation, with careful consideration of associated risks, is critical to deepening the outcomes we seek for children. To allow our work to evolve, and to ensure we are striving to improve, it is important to provide a balance of structure and freedom for Agency innovation.</p>
+
+<p>Agencies that propose to innovate outside of the Program Standards may be permitted to enter into a pilot program with BBBSA. Pilot programs must be developed so that specific data can be collected to evaluate innovative approaches and to ensure positive outcomes for children as well as child safety. A Standards Committee of the Nationwide Leadership Council will review each pilot program request for possible approval and will evaluate the data from approved pilot programs.</p>
+
+<p>In a pilot program, temporary relief from one or more standards may be given to an Agency pursuant to the following approval process:</p>
+
+<ul>
+<li>Phase 1: Research &amp; Design</li>
+<li>Phase 2: Application and Approval Process</li>
+<li>Phase 3: Conduct Pilot</li>
+<li>Phase 4: Report Outcomes</li>
+</ul>
+
+<h3 id="toc_3">Standard 8 - Quality Assurance</h3>
+
+<p>Quality Assurance reviews will be a thorough review of all program functions, including, but not limited to, Enrollment and Match Support and should review the work of all Program Staff. Staff must receive feedback on the quality of their work. The Agency must have procedures for addressing Agency Staff work that does not meet quality standards.  </p>
+
+<h3 id="toc_4">Standard 9 – Child Safety and Youth Protection Policies</h3>
+
+<p>The Agency’s Program Manual and Risk Management Plan contain written, Board approved policies and procedures which address, at a minimum:</p>
+
+<ol>
+<li><em>Policy on Obtaining Criminal History Record Check.</em> A criminal history record check is required of all:
+
+<ul>
+<li>Volunteer Bigs,</li>
+<li>Board Members,</li>
+<li>Agency Staff, and</li>
+<li>Non-mentoring volunteers who come into meaningful contact with children.</li>
+<li>Volunteer Bigs:
+
+<ol>
+<li>At time of initial enrollment: See Standard 16</li>
+<li>While an active Big: Updated, layered criminal history check at least every 3 years.</li>
+<li>At time of reassessment: See Standard 22</li>
+</ol></li>
+<li>Adherence to all applicable federal, state and local laws regulating the use of criminal history records; and that</li>
+<li>Potential Volunteer Bigs and volunteers who have been accepted as Volunteer Bigs, will be disqualified for:
+
+<ol>
+<li>Failure to complete the application and screening process;</li>
+<li>Past history of sexual abuse of children;</li>
+<li>Conviction for any crime in which children were involved;</li>
+<li>History of any sexually exploitive behavior; and</li>
+<li>Termination from a paid or volunteer position caused by misconduct with a child.</li>
+</ol></li>
+</ul></li>
+<li><em>Policy on Transporting Children.</em> The policy must include, at a minimum:
+
+<ol>
+<li>Agency Staff document in the volunteer’s file verification of appropriate licensure and insurance held by the volunteer if they will be transporting the child;</li>
+<li>Documentation of verification of appropriate licensure and insurance held by Agency Staff if they will be transporting children; and</li>
+<li>Safety requirements in accordance with state law (e.g. seat belt use, car seat use, prohibitions on use of cell phone, alcohol or other drugs prior to driving a child).</li>
+</ol></li>
+<li><em>Policy on Mandatory Training on Child Safety and Youth Protection for Volunteer Bigs, Parent/Guardians, Children, and all BBBS Agency Staff and Board Members.</em> The policy must include, at a minimum:
+
+<ol>
+<li>All Agency Staff, both paid and unpaid, including interns, must successfully complete the BBBS Child Safety and Youth Protection on-line training within 30 days of hire or prior to carrying out work that requires independent professional decision-making in service delivery, such as interviewing or conducting match support;</li>
+<li>Volunteer Bigs, parent/guardians, children must receive child safety and youth protection training prior to matching, which must be documented to the file; and</li>
+<li>Documentation that all non-mentoring volunteers, including Board members, and non-program BBBS Agency Staff coming into meaningful contact with children, have been provided information on child safety and youth protection.</li>
+</ol></li>
+<li><em>Policy on Children Visiting Volunteer Applicants’ Home.</em> The policy must address, at a minimum:
+
+<ol>
+<li>Promotion of healthy relationship development, especially early in the match relationship;</li>
+<li>Procedures to monitor safety levels of activities that take place in the Volunteer Bigs home; and</li>
+<li>Reinforcement of the children’s personal safety education provided to children, parents and volunteers at enrollment/orientation.</li>
+</ol></li>
+<li><em>Policy on Overnight Visits.</em>  If overnight visits with children and Volunteer Bigs are permitted, the policy establishes written guidelines including, at a minimum:
+
+<ol>
+<li>A waiting period before overnight visits can occur;</li>
+<li>Requirements for accommodations that allow for privacy for sleeping and changing clothes; and</li>
+<li>Procedures for Agency Staff monitoring of safety levels and frequency of overnight visits.</li>
+</ol></li>
+<li><em>Policy on Firearms and Weapons.</em> The policy must include, at a minimum:
+
+<ol>
+<li>Requirements that any firearms and/or weapons ownership by the Volunteer Big applicant be:
+
+<ol>
+<li>Disclosed to BBBS’s Agency Staff at enrollment and throughout the life of the match;</li>
+<li>Disclosed to the child’s parent/guardian by Agency Staff; and</li>
+<li>The Volunteer Big must attest to the fact that any weapons, firearms or ammunition ownership are licensed, permitted, registered, and handled in accordance with all applicable state and federal laws.
+
+<ol>
+<li>Guidelines which will be reviewed with and agreed to by the Volunteer Big and parent/guardian, and documented in the match file covering, at a minimum:</li>
+</ol></li>
+</ol></li>
+<li>Weapons, firearms and ammunition will be made inaccessible at all times to a child while in the Volunteer Bigs care, unless participating in specific, approved activity(ies), which the parent/guardian and Volunteer Big have approved in advance and such approval is documented in the match file (e.g., hunter safety courses).</li>
+</ol></li>
+<li><em>Policy on Digital Technology and Social Networking.</em> The policy must address, at a minimum:
+
+<ol>
+<li>Confidentiality</li>
+<li>Privacy</li>
+<li>Child safety</li>
+</ol></li>
+<li><em>Policy on Mandatory Child Abuse and Exploitation Reporting.</em>  The policy must include, at a minimum:
+
+<ol>
+<li>Within 24 hours of initial notification, BBBS agencies are required to report to BBBSA, AND to law enforcement or child protection authorities any reported or suspected incident, allegation, investigation or civil proceeding that may constitute abuse or exploitation committed against a child under 18 or a vulnerable adult as defined by State or Federal Law, whether or not they are reported by third parties or anonymous sources, where the misconduct of the following individuals is involved: 
+
+<ol>
+<li>Current or Former Volunteer Big, </li>
+<li>Current or Former Board Member, </li>
+<li>Current or Former Staff Person, or </li>
+<li>Current or Former Other adult associated with Big Brothers Big Sisters (other than the Parent/Guardian)</li>
+</ol></li>
+<li>Mandatory critical incident reporting to BBBSA includes information obtained from third parties or anonymous sources.  Required reports include the following, at a minimum:
+
+<ol>
+<li>Sexual misconduct against a child or in the presence of a child that may include contact or non-contact behaviors of a criminal nature;</li>
+<li>Physical violence against a child or in the presence of a child;</li>
+<li>Behavior that causes significant emotional or psychological harm to a child;</li>
+<li>Neglect of a child;</li>
+<li>Any other incident the agency deems critical</li>
+</ol></li>
+<li>All employees, volunteers and board members of a BBBSA agency are required to report any suspected or reported incident of child abuse or exploitation.  Agencies must have a policy regarding the reporting obligations of Volunteer Bigs, Board Members, Staff and non-mentoring volunteers addressing their local protocols for mandatory reporting of all suspected child abuse, neglect or exploitation (for example:  suspected abuse of a Little or other child where the alleged abuser may be a family member, friend, stranger, etc.). <strong>Reports of this nature are not required to be reported to BBBSA.</strong>  </li>
+</ol></li>
+<li><em>Policy on Board Members and Staff Serving as Volunteer Bigs.</em> The policy must include, at a minimum:
+
+<ol>
+<li>Whether current Board members and Agency Staff are allowed to serve as Volunteer Bigs, and if allowed, establishes procedures to provide for Agency Staff to remain objective in decision-making, in the best interests of the child served.</li>
+</ol></li>
+<li><em>Policy on Use of Alcohol, Tobacco Products, and Illicit and Legal Drugs or Substances.</em>  The policy must include, at a minimum: 
+
+<ol>
+<li>A prohibition on matched Volunteer Bigs being under the influence or using any substance (including alcohol, illicit drugs, and legal drugs, including medical marijuana, “legalized” marijuana, and prescription medications) that could potentially affect judgment, driving, reaction time, or otherwise jeopardize a child’s safety and wellbeing, while their Little is in the Volunteer Big’s care or company.</li>
+</ol></li>
+</ol>
+
+<h3 id="toc_5">Standard 10 – Federation-wide Information Management System</h3>
+
+<p>Agencies must use the BBBS Federation-wide information management system for all program functions.</p>
+
+<h3 id="toc_6">Standard 11 – Outcomes System</h3>
+
+<p>Agencies must use the Big Brothers Big Sisters Outcomes System, which currently includes collection, reporting, and analysis of data on the length, strength, and quality of matches; individual child outcomes; and the survey tools Strength of Relationship (SoR), Youth Outcomes Survey (YOS), and the new Child Outcomes Survey (COS) when made available.</p>
+
+<h3 id="toc_7">Standard 12 – Program Manual</h3>
+
+<p>Each Agency must have a written Program Manual available to all Agency Staff and annually reviewed by Agency Staff, containing the policies and procedures to be used for implementing all One-To-One services.  The Program Manual must contain written procedures that address the following critical functions in the Service Delivery process, at a minimum:</p>
+
+<ol>
+<li>Eligibility: Written eligibility criteria for Volunteer Bigs, children, and parent/guardians that addresses the expectations of all parties and the ability of the child to form a relationship;</li>
+<li>Inquiry and Orientation;</li>
+<li>Enrollment of Volunteer Bigs and children;</li>
+<li>Pre-match Training;</li>
+<li>Pre-matching and Matching; </li>
+<li>Youth Outcomes Development Plan;</li>
+<li>Match Supervision and Support;</li>
+<li>Match Closure;</li>
+<li>Reassessment and Rematch;</li>
+<li>Agency Staff training;</li>
+<li>Document retention and confidentiality;</li>
+<li>Agency Information Management System;</li>
+<li>Big Brothers Big Sisters Outcomes System; and</li>
+<li>Quality Assurance</li>
+</ol>
+
+<h3 id="toc_8">Standard 13 – Non-Discrimination</h3>
+
+<ol>
+<li>Children are not excluded on the basis of race, religion, national origin, color, gender, sexual orientation, disability, gender identity, parent’s veteran status, or marital status of parent. </li>
+<li>Volunteer Big Brothers, Big Sisters, Board Members, and Agency Staff as Volunteer Bigs are not excluded on the basis of race, religion, national origin, color, gender, marital status, sexual orientation, gender identity, veteran status, or disability.</li>
+</ol>
+
+<h3 id="toc_9">Standard 14 – Inquiry, Recruitment, and Orientation</h3>
+
+<table>
+    <tr>
+        <th>Volunteer</th>
+    </tr>
+<tr>
+    <td><ul><li>Description of BBBS/Agency’s mission, programs,         benefits, and purpose of program (why we do the work we         do).</li>
+        <li>Demographics of the children served.</li>
+        <li>Eligibility criteria and commitment expectations</li>
+        <li>Review enrollment process steps, including the      Agency’s right to accept or deny participants, or close a       match at any time.</li></ul>
+    </td>
+</tr>
+    <tr>
+        <th>Parent/Guardian</th>
+    </tr>
+    <tr>
+        <td><ul><li>Description of BBBS/Agency mission, programs,       benefits, and purpose of program (why we do the work we         do).</li>
+        <li>Child eligibility criteria and commitment       expectations, emphasizing the importance of parental        involvement.</li>
+<li>Review enrollment process steps, including Agency’s right to accept or deny participants, or close a match at any time.</li>
+<li>School / Site-Based Mentoring (SBM) ONLY: send to the home the application / permission forms, along with child safety prevention materials and enough program information for parent/guardian(s) to make an informed decision.</li></ul>
+        </td>   
+    </tr>
+</table>
+
+<h3 id="toc_10">Standard 15 – Child Enrollment</h3>
+
+<table>
+  <tr>
+    <th>Child Enrollment Process</th>
+  </tr>
+  <tr>
+    <td><ol><li>Child meets the Agency’s written eligibility requirements</li>
+    <li>Signed application from parent/guardian giving written consent; including appropriate releases (e.g. media, confidentiality)</li>
+    <li>Conduct an in-person interview with child</li>
+    <li>Interview with parent (not required for School/Site-based matches; however, the parent/guardian and school must be given the opportunity to provide information about the social, educational, behavioral, and developmental strengths and needs of the child</li>
+    <li>Conduct an assessment of home environment - A documented professional evaluation that can be done through a series of targeted questions relative to the physical surrounding and immediate neighborhood, and the residents of the home.  For School/Site-based:  The parent/guardian and school will be given the opportunity to provide information</li>
+    <li>Request collateral Information as needed (therapy report, school report, etc.)</li>
+    <li>Written professional assessment and matching recommendations based on a holistic assessment of information gathered during the inquiry and enrollment process.</li>
+    <li>Reassessment:  Ready-to-be-Matched (RTBM) children must be reassessed every twelve months if they have been waitlisted and not matched. All information about the child, the family, and the home environment should be updated (a home visit is optional).</li>
+  </tr>
+</table>
+
+<h3 id="toc_11">Standard 16 – Volunteer Enrollment</h3>
+
+<p>The Volunteer Big enrollment process is a comprehensive process to determine eligibility, suitability and matchability of the Volunteer Big applicant. The process gathers the necessary information needed to enable the Agency Staff to prepare recommendations for matching based upon the Volunteer Big applicant’s ability to help meet the needs of a child and form a committed relationship with the child, and to work with the parent/guardian (except in School / Site-based programs), and the Agency.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Volunteer Big Enrollment Process</th>
+    <th>Community-Based/Site-Based Plus</th> 
+    <th>School/Site-Based</th>
+  </tr>
+  <tr>
+    <td>Volunteer Big applicant meets the Agency’s written eligibility requirements</td>
+    <td>Required</td>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <td>Application with electronic or written consent </td>
+    <td>Required</td>
+    <td>Required: Parmission for High School Volunteer Bigs</td>
+    </tr>
+  <tr>
+    <td>ALL references must be obtained by Agency Staff trained in obtaining references and in Child Safety/Youth Protection.  
+
+References may be completed by mail, email, phone, or in person.  
+</td>
+    <td>Required
+One positive reference from the Volunteer Big applicant’s Spouse/Spousal equivalent or Family Member, if no Spouse/Spousal equivalent is available.  Reference must assess child safety in the applicant’s home and assess the applicant’s qualifications and appropriateness to serve as a Big.
+
+Two positive references from work, school, or a personal reference.
+
+If applicant has disclosed relevant volunteer or paid experience with youth within the last 5 years, reference(s) are required from each youth serving organization(s) where the applicant had such experience.  If a youth serving organization(s) is not responsive, all attempts to obtain each reference or references must be made and documented.
+
+If a negative reference is obtained, staff must consult with a supervisor.  In addition, where there is a negative reference, the decision on the applicant and accompanying justification must be documented in the file.  If the applicant is approved, an additional positive reference must be obtained.
+</td>
+    <td>Required
+One positive reference from Volunteer Big applicant’s Spouse/Spousal equivalent or Family Member, if no Spouse/Spousal equivalent is available.  Reference must assess the applicant’s qualifications and appropriateness to serve as a Big.
+
+One positive reference from work, school, or a personal reference.
+
+If applicant has disclosed relevant volunteer or paid experience with youth within last 5 years, reference(s) are required from each youth serving organization(s) where the applicant had such experience.  If a youth serving organization(s) is not responsive, all attempts to obtain each reference or references must be made and documented.
+
+If a negative reference is obtained, staff must consult with a supervisor.  In addition, where there is a negative reference, the decision on the applicant and accompanying justification must be documented in the file.  If the applicant is approved, an additional positive reference must be obtained.
+
+If a neutral reference is obtained (i.e., a reference that only gives factual information about dates of employment/service, but no other information), staff must obtain an additional positive reference.
+</td>
+  </tr>
+    <tr>
+    <td>Conduct background checks, including criminal history record checks.</td>
+    <td>Required<ul><li> Confirmation of person’s identity by</li>
+<li>fingerprint or</li>
+<li>government issued photo ID or</li>
+<li>social security verification</li>
+<li>DMV Check</li>
+</ul>
+
+Criminal history record checks that are layered at the local, state, and national levels. If applicable, conduct international, juvenile records, and/or military service checks.
+    </td>
+    <td>Required<ul>
+<li>Confirmation of person’s identity by</li>
+<li>fingerprint or</li>
+<li>government issued photo ID or</li>
+<li>social security verification or</li>
+<li>School ID (HS Students)</li>
+
+Criminal history record checks that are layered at the local, state, and national levels. If applicable, conduct international, juvenile records, and/or military service checks.</td>
+  </tr>
+    <tr>
+    <td>In-person Interview</td>
+    <td>Required</td>
+    <td>Required</td>
+  </tr>
+    <tr>
+    <td>Assessment of home environment</td>
+    <td>Required Optional: home visit</td>
+    <td>Required</td>
+  </tr>
+    <tr>
+    <td>Request collateral Information as needed
+(e.g., therapist, counselor)</td>
+    <td>Required</td>
+    <td>Required</td>
+  </tr>
+</table>
+
+<h3 id="toc_12">Standard 17 – Pre-Match Training</h3>
+
+<p>Training must be conducted prior to the actual match and provide participants (Volunteer Big, child, and parent/guardian) the information needed to begin a match, develop, and sustain effective and enduring match relationships.</p>
+
+<ol>
+<li>Pre-match training must be interactive, evaluated, documented and can be provided in- person, online with interaction, and/or individually, in group sessions, or a combination thereof (in writing for School/Site-Based parent/guardians). Training should be conducted by an Agency Staff member who demonstrates a strong competency for training others.</li>
+<li>Pre-match training must cover, at a minimum: </li>
+</ol>
+
+<table>
+  <tr>
+    <th>VOLUNTEER</th>
+    <td><ul><li>Ground rules / Program rules</li>
+<li>Volunteer Big obligations and appropriate roles</li>
+<li>Expectations for the match relationship; relationship development cycles</li>
+<li>What is match support and why we do it</li>
+<li>Child Safety/Youth Protection</li>
+<li>Ages and stages of child development</li>
+<li>The match closure process</li>
+</ul>
+ </td> 
+  </tr>
+   <tr>
+    <th>PARENT/GUARDIAN</th>
+    <td><ul><li>Ground rules / Program rules</li>
+<li>Expectations for the match relationship; relationship development cycles</li>
+<li>What a Volunteer Big is and isn’t</li>
+<li>Expectations for parent partnership (why you are important to this experience)</li>
+<li>What is match support and why we do it</li>
+<li>Child Safety/Youth Protection</li>
+<li>The match closure process</li>
+<ul>
+    <li>For School/Site-Based parents this information may be sent electronically or through the mail.</li>
+</ul>
+</li>
+</ul>
+</td> 
+</tr>
+<tr>
+<th>CHILD(REN)</th>
+<td><ul><li>What is a Big Brothers/Big Sister</li>
+<li>Ground rules/Program rules</li>
+<li>Expectations for the match relationship</li>
+<li>What is match support and why we do it</li>
+<li>Personal safety</li>
+<li>The match closure process</li></ul></td> 
+  </tr>
+</table>
+
+<h3 id="toc_13">Standard 18 – Pre-Matching and Matching Process</h3>
+
+<ol>
+<li>Agency Staff will assess all information gathered through inquiry and enrollment, applications, references, and interviews of all parties, including taking into consideration parental, Volunteer Big and child preferences, in order to make a thoughtful match selection, with a documented match selection rationale.</li>
+<li>The Pre-Match Presentation must be interactive, done in-person or by phone, and must ensure that each party understands the Agency’s matching rationale (including the needs of the child, and what the Volunteer Big brings to the match), resulting in all parties approving the match.  Agency staff will act in accordance with the Agency’s policy on confidentiality.  Agency staff will document match selection rational, reaction to parties (denials and acceptances) and all approval dates. For Technology Enhanced Mentoring (TEM) programs, the presentation may be done via email or via the Technology Enhanced Mentoring secure platform.</li>
+<li>The Volunteer Big must approve the match before the match introduction meeting for both Community-based and Site-based matches. For TEM programs, the volunteer must be given the opportunity to voice concerns via email or the TEM secure platform in regard to the potential Child being proposed as a match.</li>
+<li>The Parent/Guardian must approve the match before the match introduction meeting for Community-based matches.<br></li>
+<li>The Match Introduction Meeting must be in-person and conducted by Agency Staff in order to properly introduce all match parties and review critical information that will build the longest, strongest, safest match possible. For TEM programs, the Match Introduction will occur through a structured email prompt delivered by staff that guides the Big and Little to introduce themselves to each other. Staff must also review the first email exchange between Big and Little to ensure that appropriate introductions took place.  Involvement of the parent/guardian is mandatory for Community-Based and Site-Based Plus matches. Written documentation of completed match introductions for all programs must include, at minimum:
+
+<ol>
+<li>A signed match agreement form containing ground rules/program rules that outline roles, responsibilities, and expectations for each match participant; and</li>
+<li>A post-match meeting assessment by Agency Staff, reviewing overall reaction by participants to the match meeting and identifying areas for future match support.</li>
+</ol></li>
+</ol>
+
+<h3 id="toc_14">Standard 19 – The Youth Outcomes Development Plan</h3>
+
+<p>The Youth Outcomes Development Plan (YODP) describes the outcomes desired for the child as a result of the match. Agency staff will develop a YODP at the start of the match.  Staff use the YODP in match support to encourage and coach the match towards desired outcomes.  Staff must review the plan annually with match participants to assess progress made and make any necessary adjustments.</p>
+
+<h3 id="toc_15">Standard 20 – Match Support and Match Supervisory Schedule</h3>
+
+<p>The Agency Staff ensures regular, ongoing contact with each match by conducting private, one-to-one, interactive, match support contacts. The intent of Match Support is to monitor, coach, and guide the match in order to promote the development of the match relationship, match longevity, child safety, and positive youth development. </p>
+
+<ol>
+<li>All match support contacts must be documented by Agency staff.<br></li>
+<li>Match support contacts must regularly assess:
+
+<ol>
+<li>Child Safety</li>
+<li>Relationship Development, including activities and communication between the match participants</li>
+<li>Youth Development</li>
+<li>Agency Engagement</li>
+<li>Additional Needs or Concerns </li>
+</ol></li>
+<li>Match contacts may be in person, over the phone, or via written or electronic means (email/text/social media) provided a contact involves substantive, two-way communication directly with the match parties and an opportunity for the staff and match parties to engage in follow up questions or discussions.
+
+<ol>
+<li>An attempted contact, leaving a message or voice mail, or sending a contact request via electronic means does not count as a contact.</li>
+<li>In-person contacts can satisfy two months of contacts within the first year of the match (for both CB and SB matches).</li>
+<li>In TEM programs, match support will also include the added safeguard of email review. Agency staff will review at least two email exchanges per month between each match.  Staff documentation must indicate an understanding of the strengths and challenges of each match, as informed by a combination of match support contacts and review of email exchanges.  If full understanding of match dynamics cannot be understood by reviewing two email exchanges per month, staff will review additional email exchanges.  Agencies will also monitor the TEM secure platform to identify potentially inappropriate discussions.</li>
+</ol></li>
+<li>Required Contact Schedule:</li>
+</ol>
+
+<table>
+    <tr>
+      <th colspan="2">Community-Based/Site-Based Plus</th>
+    </tr>
+   <tr>
+    <th colspan="2">Within First Two Weeks</th>
+  </tr>
+  <tr>
+    <th>Parent/Guardian</th>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <th>Child(Little)</th>
+    <td>Required</td>
+  </tr>
+  <tr>
+     <th>Volunteer(Big)</th>
+    <td>Required</td>
+  </tr>
+  <tr>
+    <th colspan="2">During First Year</th>
+  </tr>
+  <tr>
+    <th>Parent/Guardian</th>
+    <td>Monthly - May alternate with Child (Little)</td>
+  </tr>
+  <tr>
+    <th>Child(Little)</th>
+    <td>Monthly - May alternate with Parent/Guardian</td>
+  </tr>
+  <tr>
+     <th>Volunteer(big)</th>
+    <td>Monthly</td>
+  </tr>
+  <tr>
+    <th colspan="2">Greater Than One Year</th>
+  </tr>
+  <tr>
+    <th>Parent/Guardian</th>
+    <td>Every 3 Months</td>
+  </tr>
+  <tr>
+    <th>Child(little)</th>
+    <td>Every 3 Months</td>
+  </tr>
+  <tr>
+     <th>Volunteer(Big)</th>
+    <td>Every 3 Months</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="4">Site-Based/Site-Based Facilitated</th>
+  </tr>
+  <tr>
+    <th colspan="4">Within First Two Weeks</th>
+  </tr>
+    <tr>
+    <th>Parent/Guardian</th>
+    <td colspan="3">Required - Written, phone, or in-person communication notifying of the match relationship and angency ground rules.</td>
+  </tr>
+    <tr>
+    <th>Child(Little)</th>
+    <td colspan="3">Required</td>
+  </tr>
+  <tr>
+     <th>Volunteer(big)</th>
+    <td colspan="3">Required</td>
+  </tr>
+  <tr>
+  <th colspan="4">During First Year</th>
+  </tr>
+    <tr>
+    <th>Parent/Guardian</th>
+    <td>Biannually - Written, phone, or in-person communication</td>
+  </tr>
+    <tr>
+    <th>Child(little)</th>
+    <td>Monthly - During school year <br> Required - One summer communication</td>
+    <tr>
+    <th> Volunteer(Big) </th>
+    <td> Monthly - During school year <br> Required - One summer communication </td>
+      <tr>
+  <th colspan="4">Greater Than One Year</th>
+  </tr>
+    <tr>
+    <tH>Parent/Guardian</th>
+    <td> Biannually – Written, phone, or in-person communication.</td>
+  </tr>
+    <tr>
+    <th>Child(little)</th>
+    <td> Trimonthly – During school year <br>
+ Required – One summer communication</td>
+  </tr>
+     <th>Volunteer(Big)</th>
+    <td> Trimonthly – During school year <br>
+ Required – One summer communication </td>
+  </tr>
+</table>
+
+<h3 id="toc_16">Standard 21 – Match Closure</h3>
+
+<p>The match closure process must include, at a minimum:</p>
+
+<ol>
+<li>The match support record must show that reasonable attempts were made by Agency Staff to contact the parent/guardian, child, and the Volunteer Big, individually, to thoroughly explore the reasons for closure, safety levels, level of satisfaction, and youth outcomes associated with the match.</li>
+<li>When no child safety issues are present and parties are available and agree, every effort will be made and documented to have a facilitated final communication or visit with the Volunteer Big and with the child (preferably in-person) that provides for:
+
+<ol>
+<li>An explanation for the reason(s) for match closure (as appropriate);</li>
+<li>An opportunity to reduce any adverse effects from the match closure for the child; and</li>
+<li>An assessment of the accomplishments of the match in delivering positive outcomes.</li>
+</ol></li>
+<li>The Agency Staff who had oversight of the match must provide a written assessment and recommendations of the appropriateness for rematch and re-engagement of the parent/guardian, child and/or Volunteer Big, either as a Volunteer Big, Little, donor, Board member or other volunteer, based on their successful past service; any need for additional support or training in future match consideration; and to determine further involvement and on-going communication with the Agency.</li>
+<li>Written notification of match closure to all parties, including, when necessary, clarification of the risks assumed by match parties in continuing a relationship outside of the Agency’s supervision.<br></li>
+</ol>
+
+<h3 id="toc_17">Standard 22 – Reassessment for Re-Match</h3>
+
+<p>If any volunteer is re-enrolling as a volunteer Big, Agency staff must take a purposeful, fresh look at the individual requesting to be matched to determine the eligibility and suitability of the volunteer for a safe, effective match.  This process must include a comprehensive review and assessment of the Agency’s prior experience with the Volunteer Big, including, at a minimum, the following components: </p>
+
+<ul>
+<li>initial enrollment information (assessment, background check); </li>
+<li>experience, motivation, training &amp; support needs; </li>
+<li>adherence to BBBS’ safety guidelines; </li>
+<li>reasons for previous match/file closures; and </li>
+<li>meaningful life changes that have occurred since the volunteer’s initial enrollment (for example: divorce, significant loss, unemployment, etc.).</li>
+</ul>
+
+<p>Based on the review and assessment, staff must determine whether additional collateral information is required.   Additionally, based on the timeline below, staff must comply with the following steps from the Volunteer Enrollment Process:</p>
+
+<table>
+  <tr>
+    <th colspan="4">Less than 1 Year from Closure</th>
+  </tr>
+  <tr>
+    <th>Updated Volunteer Interview</th>
+    <td colspan="3">Required - Via phone or in person</td>
+  </tr>
+  <tr>
+    <th>Updated Background Check</th>
+    <td colspan="3">
+    <ul><li>Required – If background check was run more than 3 years ago, a full background check is required.</li></ul> <br>
+ Required – If a background check was run less than 3 years ago, then only one layer of background check is required.</td>
+  </tr>
+  <tr>
+    <th>Updated In-Depth References
+*Additional references may be warranted based on agency assessment.</th>
+    <td colspan="3"> <ul><li>Required – Any new spouse/spousal equivalent;</li>
+ <li>Required – All youth serving organization(s) through which the volunteer did any new, relevant volunteer or paid experience with youth within the last 5 years. If a youth serving organization(s) is not responsive, all attempts to obtain each reference or references must be made and documented.</li></ul></td> 
+  </tr>
+   <tr>
+    <th>Completion of Updated/Current Agency Forms & Orientation to Any New Agency Policies or Procedures, Including Ground Rules.</th>
+    <td colspan="3">Required</td>
+  </tr>
+   <tr>
+    <th>Training, Per the Recommendations Made in the Match Closure Interview (or for New Assessments, from the Assessment Interview).</th>
+    <td>Required</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="4">More than 1 Year from Closure</th>
+  </tr>
+  <tr>
+    <th>Updated Volunteer Interview</th>
+    <td colspan="3"> Required In person or through face-to-face video interviewing via Skype, FaceTime, or the equivalent.</td>
+  </tr>
+  <tr>
+    <th>Updated Background Check</th>
+    <td colspan="3"> Required A layered background check is required. </td>
+  </tr>
+  <tr>
+    <th>Updated In-Depth References
+*Additional references may be warranted based on agency assessment.</th>
+    <td colspan="3"> <ul><li> Required – Any new spouse/spousal equivalent;</li><li>
+ Required – All youth serving organization(s) through which the volunteer did any new, relevant volunteer or paid experience with youth within the last 5 years. If a youth serving organization(s) is not responsive, all attempts to obtain each reference or references must be made and documented. </li></ul></td> 
+  </tr>
+   <tr>
+    <th>Completion of Updated/Current Agency Forms & Orientation to Any New Agency Policies or Procedures, Including Ground Rules.</th>
+    <td colspan="3">Required</td>
+  </tr>
+   <tr>
+    <th>Training, Per the Recommendations Made in the Match Closure Interview (or for New Assessments, from the Assessment Interview).</th>
+    <td>Required</td>
+  </tr>
+</table>
+
+<h3 id="toc_18">Standard 23 - Program Staff Training</h3>
+
+<ol>
+<li>All program staff must complete annual youth protection training.  Approved youth protection trainings will be available on the Learning Management System and agencies can refer to the BBBSA Agencies Only Website for recommended resources outside of BBBSA.<br></li>
+<li>Agency Staff responsible for managing the program function and/or supervising program staff must complete BBBS’ Program Manager Certification on-line courses within 1 year of hire.</li>
+</ol>
+
+
+
+
+</body>
+
+</html>
