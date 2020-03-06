@@ -91,6 +91,7 @@ body {
         
         &.approach {
             background: linear-gradient(rgba(black, 0.65), rgba(black, 0.65)), url('/img/woodshave.jpg') no-repeat center / cover fixed;
+            padding-top: 100px;
             q {
                 font-size: 24px;
             }
@@ -104,6 +105,11 @@ body {
 
             li {
                 padding-bottom: 10px;
+            }
+
+            input {
+                background-color: transparent!important;
+
             }
         }
 
@@ -171,7 +177,60 @@ img {
 .contact-btn {
     
 }
+.ohnohoney {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
 
+/* Fields */
+.approach input{
+    background-color: transparent; /* Remove background fill */
+    text-transform: uppercase; /* Make text all uppercase */
+    border-radius: 0; /* Remove corner curve */
+    border: 2px solid #fff; /* 2px white border */
+    color: #fff; /* White text */
+    height: 45px;
+}
+
+/* div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+    background-color: transparent; 
+    text-transform: uppercase; 
+    border-radius: 0; 
+    border: 2px solid #fff; 
+    color: #fff; 
+    height: 45px; 
+}
+::-webkit-input-placeholder { 
+    color:    #fff;
+}
+:-moz-placeholder { 
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { 
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { 
+   color:    #fff;
+}
+::-ms-input-placeholder { 
+   color:    #fff;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+   text-transform: uppercase;
+   padding: 10px 60px;
+   color: white;
+   background: #444;
+   font-weight: normal;
+}
+ */
 @-webkit-keyframes gradColor {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
