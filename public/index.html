@@ -24,10 +24,9 @@
             <br>
             <h1>Custom software <br> design and development.</h1>
             <br>
-            <p>Responsive web apps. Mobile apps. Systems integrations. IT consulting.</p>
+            <p>Slash Pine Tech is a technology consulting business that builds custom software solutions for it's clients based on specific business and operational needs.</p>
             <br>
             <br>
-            <a class="contact-btn btn" href="mailto:russ@slashpinetech.com">Let's Work Together</a>
             <br>
             <br>
             <br>
@@ -35,22 +34,44 @@
         </section>
 
         <section class="approach">
-            <h1 class="section-header">Approach</h1>
-            <q>You don't use a sledgehammer to crack a nut.</q>
-            <ul>
-                <li>We use the right tool for the job, even if that means learning something new;  in fact, that's where we shine!</li>
-                <li>Each job is approached with your unique circumstances in mind and we strive to solve each problem the best way.</li>
-                <li>From analysis and documentation to deployment and maintenance, we're there every step of the way to ensure your satisfaction and realization of your business goals.</li>
-            </ul>
+            <h2>Let's work together</h2>
+            <div>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <p class="ohnohoney">
+                        <label class="ohnohoney">Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <label>Email</label>
+                    <p>
+                        <input type="text" name="email" />
+                    </p>
+                    <label>Message</label>
+                    <p>
+                        <textarea name="message"></textarea>
+                    </p>
+                    <p>
+                        <button class="btn" type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
         </section>
 
         <section class="footer">
             <ul>
                 <li><a href="RussForstall_2018.pdf" target="_blank">Resume</a></li>
-                <li><a href="mailto:russ@slashpinetech.com">Contact</a></li>
+                <!-- <li><a href="mailto:russ@slashpinetech.com">Let's work together</a></li> -->
             </ul>
+            <div class="comingSoon" style="text-align: center;">
+               <h2>Our new site is coming <span id="autoDate"></span></h2>
+            </div>
             <p class="legal">© 2019 Slash Pine Tech LLC. All rights reserved.</p>
         </section>
     </div>
+    <script>
+        var m = new Date();
+        var monthNames = ["January", "February", "March", "April", "May",
+        "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("autoDate").innerHTML =
+        monthNames[m.getMonth() + 2] + " " + m.getFullYear();
+    </script>
 </body>
 </html>
