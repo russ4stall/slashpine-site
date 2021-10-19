@@ -1,97 +1,127 @@
 body {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0;
   margin: 0;
   min-height: 100%;
-  background: url("/img/pinetrees.jpg") no-repeat center/cover fixed; }
-  body a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.4s ease 0s; }
-  body .fresh {
-    color: burlywood; }
-    body .fresh h2 {
-      font-size: 4em; }
-    body .fresh h3 {
-      font-size: 2em; }
-  body .container {
-    padding: 0; }
+  background: url("/img/pinetrees.jpg") no-repeat center/cover fixed;
+}
+body a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+}
+body .fresh {
+  color: burlywood;
+}
+body .fresh h2 {
+  font-size: 4em;
+}
+body .fresh h3 {
+  font-size: 2em;
+}
+body .container {
+  padding: 0;
+}
+body section {
+  padding: 30px;
+  text-align: center;
+  padding-bottom: 100px;
+  font-weight: 300;
+}
+@media (max-width: 599px) {
   body section {
-    padding: 30px;
-    text-align: center;
-    padding-bottom: 100px;
-    font-weight: 300; }
-    @media (max-width: 599px) {
-      body section {
-        background-attachment: scroll !important; } }
-    body section .section-header {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 35px; }
-    body section.top-section {
-      padding-top: 10px;
-      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/pinetrees.jpg") no-repeat center/cover fixed; }
-    body section.work {
-      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/logs.jpg") no-repeat center/cover fixed; }
-      body section.work .testimonial {
-        max-width: 400px;
-        margin: 20px;
-        text-align: center;
-        display: inline-block;
-        vertical-align: top; }
-        body section.work .testimonial img {
-          height: 60px; }
-        body section.work .testimonial q {
-          font-size: 22px; }
-        body section.work .testimonial .qsource {
-          text-align: right;
-          padding-right: 10px; }
-          body section.work .testimonial .qsource i {
-            font-size: 12px; }
-    body section.approach {
-      background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/woodshave.jpg") no-repeat center/cover fixed;
-      padding-top: 100px; }
-      body section.approach q {
-        font-size: 24px; }
-      body section.approach ul {
-        max-width: 800px;
-        margin: 40px auto;
-        text-align: left;
-        font-size: 22px; }
-      body section.approach li {
-        padding-bottom: 10px; }
-    body section.footer {
-      background: #282828;
-      text-align: left;
-      padding-bottom: 20px; }
-      body section.footer ul {
-        padding-left: 0; }
-        body section.footer ul li {
-          list-style: none;
-          padding-bottom: 8px; }
-          body section.footer ul li a:hover {
-            text-decoration: underline; }
+    background-attachment: scroll !important;
+  }
+}
+body section .section-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+body section.top-section {
+  padding-top: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/pinetrees.jpg") no-repeat center/cover fixed;
+}
+body section.work {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/logs.jpg") no-repeat center/cover fixed;
+}
+body section.work .testimonial {
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+body section.work .testimonial img {
+  height: 60px;
+}
+body section.work .testimonial q {
+  font-size: 22px;
+}
+body section.work .testimonial .qsource {
+  text-align: right;
+  padding-right: 10px;
+}
+body section.work .testimonial .qsource i {
+  font-size: 12px;
+}
+body section.approach {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/img/woodshave.jpg") no-repeat center/cover fixed;
+  padding-top: 100px;
+}
+body section.approach q {
+  font-size: 24px;
+}
+body section.approach ul {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+  font-size: 22px;
+}
+body section.approach li {
+  padding-bottom: 10px;
+}
+body section.footer {
+  background: #282828;
+  text-align: left;
+  padding-bottom: 20px;
+}
+body section.footer ul {
+  padding-left: 0;
+}
+body section.footer ul li {
+  list-style: none;
+  padding-bottom: 8px;
+}
+body section.footer ul li a:hover {
+  text-decoration: underline;
+}
 
 html {
-  height: 100%; }
+  height: 100%;
+}
 
 nav {
   float: left;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+}
 
 .nav-link {
   float: right;
   margin: 0 10px;
   border-bottom: 1px solid transparent;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+}
 
 .nav-link:hover {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+}
 
 img {
-  margin-top: 50px; }
+  margin-top: 50px;
+}
 
 .container {
   width: 100%;
@@ -100,7 +130,8 @@ img {
   background-size: 350% 350%;
   -webkit-animation: gradColor 60s ease infinite;
   -moz-animation: gradColor 60s ease infinite;
-  animation: gradColor 60s ease infinite; }
+  animation: gradColor 60s ease infinite;
+}
 
 .btn {
   background-color: transparent;
@@ -109,12 +140,14 @@ img {
   font-size: 18px;
   padding: 13px;
   color: white;
-  transition: background-color 0.5s ease; }
+  transition: background-color 0.5s ease;
+}
 
 .btn:hover {
   background-color: white;
   color: #1e1e1e;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .ohnohoney {
   opacity: 0;
@@ -123,33 +156,46 @@ img {
   left: 0;
   height: 0;
   width: 0;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .approach input, .approach textarea {
   width: 90%;
   max-width: 400px;
-  padding: 1rem; }
-
+  padding: 1rem;
+}
 @-webkit-keyframes gradColor {
   0% {
-    background-position: 51% 0%; }
+    background-position: 51% 0%;
+  }
   50% {
-    background-position: 50% 100%; }
+    background-position: 50% 100%;
+  }
   100% {
-    background-position: 51% 0%; } }
-
+    background-position: 51% 0%;
+  }
+}
 @-moz-keyframes gradColor {
   0% {
-    background-position: 51% 0%; }
+    background-position: 51% 0%;
+  }
   50% {
-    background-position: 50% 100%; }
+    background-position: 50% 100%;
+  }
   100% {
-    background-position: 51% 0%; } }
-
+    background-position: 51% 0%;
+  }
+}
 @keyframes gradColor {
   0% {
-    background-position: 51% 0%; }
+    background-position: 51% 0%;
+  }
   50% {
-    background-position: 50% 100%; }
+    background-position: 50% 100%;
+  }
   100% {
-    background-position: 51% 0%; } }
+    background-position: 51% 0%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

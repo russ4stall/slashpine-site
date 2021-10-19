@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/main.scss -o ./public/css",
-    "watch": "node-sass --watch --recursive sass -o ./public/css .",
+    "sass": "sass sass/main.scss ./public/css/main.css",
+    "watch": "sass --watch --recursive sass -o ./public/css .",
     "build": "echo ok"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "latest"
+    "sass": "latest"
   }
 }
