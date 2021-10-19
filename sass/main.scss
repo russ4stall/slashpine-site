@@ -35,7 +35,11 @@ body {
         transition: all 0.4s ease 0s;
     }
 
-    
+    .fresh {
+        color: burlywood;
+        h2 { font-size: 4em; }
+        h3 { font-size: 2em; }
+    }
 
     .container {
         padding: 0;
@@ -108,8 +112,7 @@ body {
             }
 
             input {
-                background-color: transparent!important;
-
+                //background-color: transparent!important;
             }
         }
 
@@ -164,18 +167,18 @@ img {
     animation: gradColor 60s ease infinite;
 }
 .btn {
-    background: transparent;
+    background-color: transparent;
     border: 2px solid white;
     border-radius: 3px;
     font-size: 18px;
     padding: 13px;
+    color: white;
+    transition: background-color 0.5s ease;
 }
 .btn:hover {
-    background: white;
+    background-color: white;
     color: rgb(30,30,30);
-}
-.contact-btn {
-    
+    cursor: pointer;
 }
 .ohnohoney {
     opacity: 0;
@@ -187,50 +190,18 @@ img {
     z-index: -1;
 }
 
-/* Fields */
-.approach input{
-    background-color: transparent; /* Remove background fill */
-    text-transform: uppercase; /* Make text all uppercase */
-    border-radius: 0; /* Remove corner curve */
-    border: 2px solid #fff; /* 2px white border */
-    color: #fff; /* White text */
-    height: 45px;
+.approach {
+    input, textarea {
+        width: 90%;
+        max-width: 400px;
+        padding: 1rem;
+    }
+
+    .btn {
+        
+    }
 }
 
-/* div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
-    background-color: transparent; 
-    text-transform: uppercase; 
-    border-radius: 0; 
-    border: 2px solid #fff; 
-    color: #fff; 
-    height: 45px; 
-}
-::-webkit-input-placeholder { 
-    color:    #fff;
-}
-:-moz-placeholder { 
-   color:    #fff;
-   opacity:  1;
-}
-::-moz-placeholder { 
-   color:    #fff;
-   opacity:  1;
-}
-:-ms-input-placeholder { 
-   color:    #fff;
-}
-::-ms-input-placeholder { 
-   color:    #fff;
-}
-
-div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
-   text-transform: uppercase;
-   padding: 10px 60px;
-   color: white;
-   background: #444;
-   font-weight: normal;
-}
- */
 @-webkit-keyframes gradColor {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}

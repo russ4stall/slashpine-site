@@ -9,6 +9,12 @@ body {
     color: white;
     text-decoration: none;
     transition: all 0.4s ease 0s; }
+  body .fresh {
+    color: burlywood; }
+    body .fresh h2 {
+      font-size: 4em; }
+    body .fresh h3 {
+      font-size: 2em; }
   body .container {
     padding: 0; }
   body section {
@@ -97,15 +103,18 @@ img {
   animation: gradColor 60s ease infinite; }
 
 .btn {
-  background: transparent;
+  background-color: transparent;
   border: 2px solid white;
   border-radius: 3px;
   font-size: 18px;
-  padding: 13px; }
+  padding: 13px;
+  color: white;
+  transition: background-color 0.5s ease; }
 
 .btn:hover {
-  background: white;
-  color: #1e1e1e; }
+  background-color: white;
+  color: #1e1e1e;
+  cursor: pointer; }
 
 .ohnohoney {
   opacity: 0;
@@ -116,35 +125,10 @@ img {
   width: 0;
   z-index: -1; }
 
-  input[type=text], select, textarea {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  .btn {
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-weight:300;
-    text-align:center;
-    transition: all 0.2s;
-    background-color: #FFFFFF;
-    color: #000000;
-    }
-  .btn:hover{
-    color: #FFFFFF;
-    background-color: rgba(0,0,0,0.5);
-  }
+.approach input, .approach textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem; }
 
 @-webkit-keyframes gradColor {
   0% {
