@@ -17,6 +17,11 @@ body h1.hero {
   text-align: center;
   margin: auto;
 }
+@media (max-width: 599px) {
+  body h1.hero {
+    font-size: 2em;
+  }
+}
 body .fresh {
   color: burlywood;
 }
