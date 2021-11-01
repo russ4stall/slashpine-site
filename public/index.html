@@ -22,21 +22,21 @@
             <img src="img/logo_white.png" width="200px" alt="SLASH/PINE/TECH">
             <br>
             <br>
-            <h1>Custom software <br> design and development.</h1>
+            <br>
+            <!-- <h1>Custom software <br> design and development.</h1> -->
+            <h1 class="hero">We build amazing software and solve business problems with technology.</h1>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
             <div class="fresh">
                 <h2>We're expanding! &#127881;</h2>
                 <h3>
                     Our team is growing and our vision is too. &#128064; <br>
                     Check back soon to learn more.
-                </div>
-            </h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+                </h3>
+            </div>
         </section>
 
         <section class="approach">
@@ -69,16 +69,17 @@
             <div class="comingSoon" style="text-align: center;">
                <h2>Our new site is coming <span id="autoDate"></span>...we promise &#128527;</h2>
             </div>
-            <p class="legal">© 2021 Slash Pine Tech LLC. All rights reserved.</p>
+            <p class="legal">© <span id="copyYear">1999</span> Slash Pine Tech LLC. All rights reserved.</p>
         </section>
     </div>
     <script>
         var m = new Date();
-        var monthNames = ["January", "February", "March", "April", "May",
-        "June", "July", "August", "September", "October", "November", "December"];
-        document.getElementById("autoDate").innerHTML =
-        monthNames[m.getMonth() + 2] + " " + m.getFullYear();
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", 
+            "September", "October", "November", "December", "January", "February", "March"];
+        let daYear = m.getFullYear();
+        let daMonth = monthNames[m.getMonth() + 2];
+        document.getElementById("autoDate").innerHTML = daMonth + " " + daYear;
+        document.getElementById("copyYear").innerHTML = daYear;
     </script>
-
 </body>
 </html>

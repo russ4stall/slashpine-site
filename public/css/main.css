@@ -11,11 +11,17 @@ body a {
   text-decoration: none;
   transition: all 0.4s ease 0s;
 }
+body h1.hero {
+  font-size: 3.5em;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
 body .fresh {
   color: burlywood;
 }
 body .fresh h2 {
-  font-size: 4em;
+  font-size: 3em;
 }
 body .fresh h3 {
   font-size: 2em;
